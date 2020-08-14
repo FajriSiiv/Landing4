@@ -1,0 +1,183 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Viga&display=swap);
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Viga', sans-serif;
+    font-weight: 600;
+}
+body {
+  background-color: rgba(173, 171, 171, 0.582);
+  box-sizing: border-box;
+}
+nav .logo{
+    font-weight:700;
+    letter-spacing: 5px;
+}
+.navbar-light .navbar-toggler{
+    border: none;
+}
+.navbar-light .navbar-brand{
+    color: lightseagreen;
+}
+.navbar-light .navbar-nav .nav-link{
+    color : blueviolet;
+}
+nav .collapse ul li{
+    margin: 0 10px;
+    font-weight: 700;
+    color: red;
+}
+.jumbotron {
+    background-image: url(bg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 50px;
+}
+.jumbotron div{
+    margin: auto;
+}
+.jumbotron h4{
+    font-weight: 700;
+    color: rgb(172, 102, 238);
+    text-shadow: 1px 1px  2px black;
+}
+.jumbotron img{
+    width: 300px;
+    height: 250px;    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.jumbotron .btn {
+    padding: 2px 15px;
+    background-color: rgba(86, 228, 173, 0.623);
+    border-radius: 20px;
+    transition: .4s;
+    margin: 5px 0;
+    font-weight: 600;
+}
+.jumbotron .btn:hover{
+    background-color: rgb(157, 93, 218);
+}
+.jumbotron p{
+    font-size: 12px;
+}
+.feature{
+    width: 90%;
+    margin: auto;
+}
+.feature .row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 30px;
+    grid-gap: 20px;
+}
+.feature .row div{
+    padding: 20px;
+    box-shadow: 1px 1px 5px black;
+    transition: .5s;
+    cursor: pointer;
+}
+.feature .row div:hover{
+    transform: scale(1.09);
+    background-color: rgb(167, 83, 236);
+}
+.feature .row h5{
+    font-weight: 600;
+    margin: 10px 0;
+}
+.feature .row p{
+    font-weight: normal;
+}
+.jumbotron2{
+    background-color: rgba(117, 216, 247, 0.74);
+}
+.jumbotron2 .container{
+    text-align: center;
+    padding: 30px 0;
+    width: 70%;
+}
+.jumbotron2 p{
+    margin-bottom: 50px;
+}
+.jumbotron2 .tombol{
+    position: relative;
+    font-size: 50px;
+    padding: 2px 50px;
+    background: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 1s;
+}
+.jumbotron2 .tombol:hover{
+    color: white;
+    background-color: rgb(43, 39, 39);
+    box-shadow: 0 0 0 10px rgb(162, 247, 123),
+                0 0 0 20px rgb(156, 219, 119),
+                0 0 0 30px rgba(68, 99, 51, 0.589);  
+}
+/* Responsive */
+/* Desktop */
+@media (min-width : 996px){
+ .feature{
+     margin-bottom: 50px;
+ }
+}
+
+/* Tablet */
+@media (max-width : 768px){
+    .feature{
+    margin-bottom: 40px;
+    }
+    .feature .row{
+        grid-template-columns: 1fr;
+    }
+    .feature .row div{
+        width: 80%;
+        margin: auto;
+    }
+    .feature .row i{
+        font-size: 30px;
+    }
+    .feature .row div:hover{
+        transform: scale(1.05);
+    }
+    .jumbotron2 .tombol{
+        font-size: 30px;
+    }
+}
+
+/* Hp */
+@media (max-width : 576px){
+    .jumbotron img{
+        width: 60%;
+        height: 60%;
+    }
+    .feature {
+        width: 70%;
+        margin-bottom: 25px;
+    }
+    .feature .row{
+        grid-template-columns: 1fr;
+    }
+    .feature .row div:hover{
+        transform: none;
+    }
+    .feature .row div i{
+        font-size: 40px;
+    }
+    .feature .row div{
+        width: 90%;
+        margin: auto;
+    }
+    .jumbotron2 .container h1{
+        font-size: 40px;
+    }
+    .jumbotron2 p{
+        font-size: 13px;
+    }
+    .jumbotron2 .tombol{
+        font-size: 30px;
+    }
+}
